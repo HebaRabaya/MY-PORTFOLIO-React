@@ -53,7 +53,7 @@ const initialState = {
       cat: "HTML & CSS",
       title: "BOOK STORE V4",
       link: "projects/book-store-v4.html",
-      description: "Latest version with modern design patterns",
+      description: "",
     },
   ],
   skills: [
@@ -80,6 +80,30 @@ const initialState = {
       description:
         "⚡ Make It Interactive\nAdd dynamic behavior and interactivity to websites using scripting and event-driven programming.",
       color: "#f7df1e",
+    },
+    {
+      id: 4,
+      icon: "fa-brands fa-react",
+      title: "React",
+      description:
+        "⚛️ Make It Interactive with React\nBring your websites to life using components, state, and event-driven programming.",
+      color: "#7651bbff",
+    },
+    {
+      id: 5,
+      icon: "fa-brands fa-java",
+      title: "Java",
+      description:
+        " ⚡Make It Robust with Java\nBuild reliable, scalable, and secure applications that power the digital world.",
+      color: "#E76F00",
+    },
+    {
+      id: 6,
+      icon: "fa-brands fa-python",
+      title: "Python",
+      description:
+        "✨ Make It Powerful with Python\nAutomate, analyze, and innovate with one of the world’s most versatile programming languages.",
+      color: "#3776AB",
     },
   ],
 };
