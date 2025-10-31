@@ -1,0 +1,105 @@
+/* تنسيقات قسم المهارات */
+
+/* تأثيرات الحركة */
+.slide-in-up {
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.rotate {
+  animation: rotate 8s linear infinite;
+}
+
+/* تعريفات الانيميشن */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for the section containing cards */
+.contant {
+  display: flex; /* Use flex layout */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: row; /* Arrange items in a row */
+  flex-wrap: wrap; /* Allow items to wrap when needed */
+}
+
+/* Styling for the card */
+.card {
+  background-color: #fff; /* Set background color to white */
+  width: 21.25em; /* Set card width */
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15); /* Add shadow effect */
+  border-radius: 10px; /* Round the corners */
+  padding: 25px; /* Add padding inside the card */
+  margin: 15px; /* Add margin between cards */
+  transition: 0.7s ease; /* Add transition effect */
+}
+
+/* Effect when hovering over the card */
+.card:hover {
+  transform: scale(1.1); /* Scale the card when hovering */
+}
+
+/* Styling for the icon inside the card */
+.icon {
+  color: #3a6cf4; /* Set icon color */
+  font-size: 8em; /* Set icon size */
+  text-align: center; /* Center the icon */
+}
+
+/* Styling for card information */
+.info {
+  text-align: center; /* Center the text */
+}
+
+.info h3 {
+  color: #3a6cf4; /* Set title color */
+  font-size: 1.2em; /* Set font size */
+  font-weight: 700; /* Set font weight */
+  margin: 10px; /* Add margin around the title */
+}
+
+/* الوضع المظلم للمهارات */
+body[data-theme="dark"] .card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] .card:hover {
+  box-shadow: 0 8px 30px rgba(78, 158, 255, 0.2);
+}
+
+body[data-theme="dark"] .icon {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .info h3 {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .info p {
+  color: #e0e0e0;
+}
+
+/* الاستجابة للشاشات الصغيرة */
+@media (max-width: 1023px) {
+  .content {
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items vertically */
+  }
+}
+
+

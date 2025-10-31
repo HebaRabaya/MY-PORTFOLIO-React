@@ -1,0 +1,118 @@
+/* تنسيقات الصفحة الرئيسية */
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../../../assets/main.png) no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* تأثيرات الحركة */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* تعريفات الانيميشن */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(58, 108, 244, 0.5);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(58, 108, 244, 0.8);
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 550;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 2.1em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* تنسيقات خاصة بالصفحة الرئيسية للشاشات الصغيرة */
+@media (max-width: 1023px) {
+  .main h2 {
+    font-size: 1em;
+  }
+
+  .main h3 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 641px) {
+  .main h2 {
+    font-size: 0.8em;
+  }
+
+  .main h3 {
+    font-size: 1.4em;
+  }
+}
+
+/* تنسيقات الوضع المظلم للصفحة الرئيسية */
+body[data-theme="dark"] .main {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+body[data-theme="dark"] .main h2 {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .main h2 span {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .main h3 {
+  color: #e0e0e0;
+}

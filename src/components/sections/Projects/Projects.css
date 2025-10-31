@@ -1,0 +1,125 @@
+/* تنسيقات قسم المشاريع */
+
+/* تأثيرات الحركة */
+.slide-in-up {
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* تعريفات الانيميشن */
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the projects section */
+.projects {
+  background-color: #000016; /* Set background color to black */
+}
+
+/* Layout for cards inside the projects section */
+.projects .content {
+  display: flex; /* Use flex layout */
+  flex-wrap: wrap; /* Prevent overflowing the screen */
+  justify-content: center; /* Center the items */
+  gap: 20px; /* Add space between cards */
+  margin-top: 30px; /* Add top margin */
+}
+
+/* Styling for project cards */
+.project-card {
+  background-color: #fff; /* Set background color to white */
+  border: 2px solid #fff; /* Set white border */
+  min-height: 14em; /* Set minimum height */
+  width: 23em; /* Set card width */
+  overflow: hidden; /* Hide overflow content */
+  border-radius: 10px; /* Round corners */
+  margin: 20px; /* Add margin between cards */
+  transition: 0.7s ease; /* Add transition effect */
+}
+
+/* Effect when hovering over the project card */
+.project-card:hover {
+  transform: scale(1.1); /* Scale the card when hovering */
+}
+
+/* Reduce image opacity when hovering over the project card */
+.project-card:hover .project-image {
+  opacity: 0.9; /* Decrease opacity */
+}
+
+/* Styling for project images */
+.project-image img {
+  width: 100%; /* Make image fit the card */
+}
+
+/* Styling for project information */
+.project-info {
+  padding: 1em; /* Add padding inside the card */
+  margin-top: auto; /* Push content to the bottom */
+}
+
+/* Styling for project category */
+.project-category {
+  font-size: 1em; /* Set font size */
+  color: #000; /* Set text color to black */
+}
+
+/* Styling for project title */
+.project-title {
+  display: flex; /* Use flex layout */
+  justify-content: space-between; /* Distribute items evenly */
+  text-transform: uppercase; /* Capitalize text */
+  font-weight: 800; /* Set font weight */
+  margin-top: 10px; /* Add top margin */
+}
+
+/* Styling for the 'more details' link */
+.more-details {
+  text-decoration: none; /* Remove underline */
+  color: #3a6cf4; /* Set link color */
+}
+
+/* Effect when hovering over the 'more details' link */
+.more-details:hover {
+  color: #601cfc; /* Change color when hovering */
+}
+
+/* الوضع المظلم للمشاريع */
+body[data-theme="dark"] .projects {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+body[data-theme="dark"] .project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+body[data-theme="dark"] .project-category {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .project-title {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .more-details {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .more-details:hover {
+  color: #6bb6ff;
+}
+
+/* الاستجابة للشاشات الصغيرة */
+@media (max-width: 1023px) {
+  .content {
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items vertically */
+  }
+}
+
+

@@ -1,0 +1,25 @@
+/* تنسيقات قسم التواصل */
+
+/* Styling for contact icons */
+.contact .icon {
+  font-size: 4.5em; /* Set icon size */
+}
+
+/* Styling for contact section titles */
+.contact .info h3 {
+  color: #000; /* Set text color to black */
+}
+
+/* Styling for contact section text */
+.contact .info p {
+  font-size: 1.2em; /* Set font size */
+}
+
+/* الوضع المظلم لقسم التواصل */
+body[data-theme="dark"] .contact .info h3 {
+  color: #4e9eff;
+}
+
+body[data-theme="dark"] .contact .info p {
+  color: #e0e0e0;
+}
