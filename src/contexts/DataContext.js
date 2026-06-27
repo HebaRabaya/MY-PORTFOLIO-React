@@ -33,7 +33,7 @@ const initialState = {
     },
     {
       id: 4,
-      img: require("../assets/portfolio-react.png"),
+      img: require("../assets/ivest press.png"),
       cat: "REACT & NODE.JS ",
       title: "IVEST PRESS",
       link: "",
