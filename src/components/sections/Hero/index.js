@@ -35,15 +35,7 @@ export default function Hero() {
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a
-            href="https://www.facebook.com/share/1CNQbehdNN/"
-            target="_blank"
-            rel="noreferrer"
-            className="floating"
-            style={{ animationDelay: '0.5s' }}
-          >
-            <i className="fa-brands fa-facebook"></i>
-          </a>
+         
           <a
             href="https://github.com/HebaRabaya"
             target="_blank"
