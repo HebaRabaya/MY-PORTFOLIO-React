@@ -99,6 +99,14 @@ const initialState = {
     },
     {
       id: 6,
+      icon: "fa-brands fa-node-js",
+      title: "Node.js",
+      description:
+        "⚙️ Build Fast Backends\nCreate scalable server-side applications and APIs with JavaScript runtime for modern web development.",
+      color: "#68A063",
+    },
+    {
+      id: 7,
       icon: "fa-brands fa-python",
       title: "Python",
       description:
