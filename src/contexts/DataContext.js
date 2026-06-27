@@ -34,10 +34,10 @@ const initialState = {
     {
       id: 4,
       img: require("../assets/portfolio-react.png"),
-      cat: "REACT",
-      title: "MY-PORTFOLIO-React",
-      link: "https://github.com/HebaRabaya/MY-PORTFOLIO-React.git",
-      description: "Personal portfolio website design with React",
+      cat: "REACT & NODE.JS ",
+      title: "IVEST PRESS",
+      link: "",
+      description: "AI-powered platform for journalists",
     },
     {
       id: 5,
