@@ -10,9 +10,7 @@ export default function Footer() {
         <a href="https://linkedin.com/in/heba-rabaya-a5ba03332" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://www.facebook.com/share/1CNQbehdNN/" target="_blank" rel="noreferrer">
-          <i className="fa-brands fa-facebook"></i>
-        </a>
+        
         <a href="https://github.com/HebaRabaya" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-github"></i>
         </a>
