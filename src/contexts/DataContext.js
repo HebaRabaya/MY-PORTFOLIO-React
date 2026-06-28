@@ -130,7 +130,7 @@ const dataReducer = (state, action) => {
       return {
         ...state,
         projects: state.projects.map((project) =>
-          project.id === action.payload.id ? action.payload : project
+          project.id === action.payload.id ? action.payload : project,
         ),
       };
 
@@ -138,7 +138,7 @@ const dataReducer = (state, action) => {
       return {
         ...state,
         projects: state.projects.filter(
-          (project) => project.id !== action.payload
+          (project) => project.id !== action.payload,
         ),
       };
 
@@ -153,7 +153,7 @@ const dataReducer = (state, action) => {
       return {
         ...state,
         skills: state.skills.map((skill) =>
-          skill.id === action.payload.id ? action.payload : skill
+          skill.id === action.payload.id ? action.payload : skill,
         ),
       };
 
@@ -173,13 +173,13 @@ export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(dataReducer, initialState);
 
   // تحديد الإدارة من localStorage
-React.useEffect(() => {
-  const flag = localStorage.getItem("isAdmin");
+  React.useEffect(() => {
+    const flag = localStorage.getItem("isAdmin");
 
-  if (flag === "true") {
-    state.isAdmin = true;
-  }
-}, [state]);
+    if (flag === "true") {
+      state.isAdmin = true;
+    }
+  }, [state]);
 
   // دوال إدارة المشاريع
   const addProject = (project) => {
@@ -228,3 +228,4 @@ export const useData = () => {
   }
   return context;
 };
+//

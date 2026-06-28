@@ -7,7 +7,7 @@ export default function Hero() {
     "Passionate about web development",
     "Creating amazing user experiences",
     "Building the future with code",
-    "Turning ideas into reality"
+    "Turning ideas into reality",
   ];
 
   return (
@@ -16,12 +16,18 @@ export default function Hero() {
         <h2>
           Hello, I'm Heba Rabaya <br />
           <span>
-            Computer Science Student<br />
+            Computer Science Student
+            <br />
             at Arab American University
           </span>
         </h2>
         <h3>
-          <Typing texts={typingTexts} speed={100} deleteSpeed={50} pauseTime={2000} />
+          <Typing
+            texts={typingTexts}
+            speed={100}
+            deleteSpeed={50}
+            pauseTime={2000}
+          />
         </h3>
         <a href="#projects" className="main-btn glow">
           View My Work
@@ -35,13 +41,13 @@ export default function Hero() {
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-         
+
           <a
             href="https://github.com/HebaRabaya"
             target="_blank"
             rel="noreferrer"
             className="floating"
-            style={{ animationDelay: '1s' }}
+            style={{ animationDelay: "1s" }}
           >
             <i className="fa-brands fa-github"></i>
           </a>
@@ -51,4 +57,4 @@ export default function Hero() {
   );
 }
 
-
+//

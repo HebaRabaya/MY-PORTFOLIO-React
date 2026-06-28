@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
           <div className="info">
             <h3>Email</h3>
-            <p>h.rabaya7@student.aaup.ps</p>
+            <p>hebarabaya666@gmail.com</p>
           </div>
         </div>
       </div>
