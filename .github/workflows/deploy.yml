@@ -2,7 +2,8 @@ name: Deploy React App
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -19,7 +20,11 @@ jobs:
           node-version: 18
 
       - run: npm install
-      - run: npm run build
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: false
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
