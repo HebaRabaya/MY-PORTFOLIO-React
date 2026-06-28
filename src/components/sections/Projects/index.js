@@ -16,59 +16,80 @@ export default function Projects() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.dataset.index);
-            setVisible(prev => [...prev, index]);
+
+            setVisible((prev) =>
+              prev.includes(index) ? prev : [...prev, index]
+            );
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(project => observer.observe(project));
+    const projectCards = document.querySelectorAll(".project-card");
+    projectCards.forEach((project) => observer.observe(project));
 
     return () => observer.disconnect();
   }, [projects]);
 
-  const handleAddProject = () => {};
-  const handleEditProject = (project) => {};
-  const handleSaveProject = (projectData) => {};
-  const handleDeleteProject = (projectId) => {};
+  const handleSaveProject = () => {
+    setShowForm(false);
+    setEditingProject(null);
+  };
+
   const handleCancelForm = () => {
     setShowForm(false);
     setEditingProject(null);
   };
 
   const resolveImage = (img) => {
-    if (img) return img;
-    return bookStore;
+    return img || bookStore;
   };
 
   return (
     <section className="projects" id="projects">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "30px",
+        }}
+      >
         <h2 className="title slide-in-up">Projects</h2>
       </div>
+
       <div className="content">
         {projects.map((project, index) => (
-          <div 
-            className={`project-card ${visible.includes(index) ? 'slide-in-up' : ''}`} 
+          <div
+            className={`project-card ${
+              visible.includes(index) ? "slide-in-up" : ""
+            }`}
             key={project.id}
             data-index={index}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="project-image">
-              <img 
-                src={resolveImage(project.img)} 
-                alt={project.title} 
+              <img
+                src={resolveImage(project.img)}
+                alt={project.title}
               />
+
               <div className="project-overlay">
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">
+                  {project.description}
+                </p>
               </div>
             </div>
+
             <div className="project-info">
-              <p className="project-category">{project.cat}</p>
+              <p className="project-category">
+                {project.cat}
+              </p>
+
               <strong className="project-title">
                 <span>{project.title}</span>
+
                 <a
                   href={project.link}
                   target="_blank"
@@ -94,5 +115,3 @@ export default function Projects() {
     </section>
   );
 }
-
-
