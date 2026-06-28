@@ -173,13 +173,13 @@ export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(dataReducer, initialState);
 
   // تحديد الإدارة من localStorage
-  React.useEffect(() => {
-    const flag = localStorage.getItem("isAdmin");
-    if (flag === "true") {
-      // لا نغير via reducer للحفاظ على البساطة؛ نُسند مباشرة قبل نشر القيمة
-      state.isAdmin = true;
-    }
-  }, []);
+React.useEffect(() => {
+  const flag = localStorage.getItem("isAdmin");
+
+  if (flag === "true") {
+    state.isAdmin = true;
+  }
+}, [state]);
 
   // دوال إدارة المشاريع
   const addProject = (project) => {
