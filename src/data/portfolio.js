@@ -6,10 +6,14 @@
 // --- Personal / profile info ---
 export const profile = {
   name: "Heba Rabaya",
-  title: "Computer Science Graduate | Web & Mobile App Development",
+  title: "Computer Science Graduate | Software Engineer",
+  titleLines: [
+    "Computer Science Graduate",
+    "Software Engineer",
+  ],
   typingTexts: [
-    "Web & Mobile App Developer",
     "Building clean, modern experiences",
+    "Web & mobile apps with care",
     "Turning ideas into real products",
   ],
   email: "hebarabaya666@gmail.com",
@@ -49,6 +53,7 @@ export const projects = [
     title: "IvestPress",
     cat: "React & Node.js",
     img: require("../assets/ivest press.png"),
+    imageFit: "contain",
     link: "https://ivestpress.com/",
     description:
       "AI-powered platform for journalists. Graduation project built with React, Node.js, Express and PostgreSQL.",
@@ -58,6 +63,7 @@ export const projects = [
     title: "Bloom Flowers",
     cat: "Flutter & Firebase",
     img: require("../assets/bloom.png"),
+    imageFit: "contain",
     link: "https://github.com/HebaRabaya/Bloom_app.git",
     description:
       "A flower shop mobile app built with Flutter, Dart, Firebase and Cloudinary.",
@@ -67,6 +73,7 @@ export const projects = [
     title: "Personal Portfolio",
     cat: "React",
     img: require("../assets/portfolio-react.png"),
+    imageFit: "contain",
     link: "https://github.com/HebaRabaya/MY-PORTFOLIO-React",
     description:
       "This portfolio website — designed and built with React and Framer Motion.",

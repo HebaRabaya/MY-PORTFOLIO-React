@@ -40,8 +40,12 @@ export default function Projects() {
             data-index={index}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
-            <div className="project-image">
-              <img src={project.img} alt={project.title} />
+            <div className={`project-image ${project.imageFit === "contain" ? "is-contain" : "is-cover"}`}>
+              <img
+                src={project.img}
+                alt={project.title}
+                style={{ objectPosition: project.imagePosition || "center" }}
+              />
 
               <div className="project-overlay">
                 <p className="project-description">{project.description}</p>

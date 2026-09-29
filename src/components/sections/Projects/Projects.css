@@ -51,19 +51,28 @@
 /* Styling for project images (uniform height across cards) */
 .project-image {
   position: relative;
-  height: 210px;
+  height: 250px;
   overflow: hidden;
+  background: #0b1220;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Keep aspect ratio, fill the frame */
   transition: transform 0.5s ease;
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.08);
+.project-image.is-cover img {
+  object-fit: cover;
+}
+
+.project-image.is-contain img {
+  object-fit: contain;
+  padding: 12px;
+}
+
+.project-card:hover .project-image.is-cover img {
+  transform: scale(1.06);
 }
 
 /* Overlay with the description, revealed on hover */
