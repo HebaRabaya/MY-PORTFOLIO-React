@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MY-PORTFOLIO-React/static/css/main.51d659cc.css",
+    "main.js": "/MY-PORTFOLIO-React/static/js/main.226ceb50.js",
+    "static/media/ivest press.png": "/MY-PORTFOLIO-React/static/media/ivest press.5ff3453f39499f37c745.png",
+    "static/media/portfolio-react.png": "/MY-PORTFOLIO-React/static/media/portfolio-react.7e40dbcd292993436bb2.png",
+    "static/media/main.png": "/MY-PORTFOLIO-React/static/media/main.a0812228757a253312c7.png",
+    "static/media/bloom.png": "/MY-PORTFOLIO-React/static/media/bloom.6a54dd7b0af6a26f9131.png",
+    "index.html": "/MY-PORTFOLIO-React/index.html",
+    "main.51d659cc.css.map": "/MY-PORTFOLIO-React/static/css/main.51d659cc.css.map",
+    "main.226ceb50.js.map": "/MY-PORTFOLIO-React/static/js/main.226ceb50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51d659cc.css",
+    "static/js/main.226ceb50.js"
+  ]
+}

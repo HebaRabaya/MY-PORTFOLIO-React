@@ -1,0 +1,107 @@
+/* ===== Skills section ===== */
+.skills-section {
+  text-align: center;
+}
+
+.skills-subtitle {
+  color: #6b7280;
+  font-size: 1.1em;
+  margin-top: -15px;
+  margin-bottom: 45px;
+}
+
+/* Responsive grid of skill badges */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Single skill badge / card */
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 26px 16px;
+  background-color: #fff;
+  border: 1px solid #eef0f4;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(1, 1, 1, 0.06);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.skill-badge.appear {
+  animation: skillAppear 0.5s ease-out forwards;
+}
+
+.skill-badge:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(58, 108, 244, 0.18);
+  border-color: rgba(58, 108, 244, 0.35);
+}
+
+.skill-badge__icon {
+  font-size: 3.4em;
+  line-height: 1;
+  transition: transform 0.35s ease;
+}
+
+.skill-badge:hover .skill-badge__icon {
+  transform: scale(1.12);
+}
+
+.skill-badge__name {
+  font-size: 1em;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+@keyframes skillAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Dark mode ===== */
+body[data-theme="dark"] .skills-subtitle {
+  color: #9aa4b2;
+}
+
+body[data-theme="dark"] .skill-badge {
+  background-color: #161616;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] .skill-badge:hover {
+  box-shadow: 0 14px 30px rgba(78, 158, 255, 0.22);
+  border-color: rgba(78, 158, 255, 0.4);
+}
+
+body[data-theme="dark"] .skill-badge__name {
+  color: #e6e6e6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 641px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-badge {
+    padding: 20px 10px;
+  }
+
+  .skill-badge__icon {
+    font-size: 2.8em;
+  }
+}
