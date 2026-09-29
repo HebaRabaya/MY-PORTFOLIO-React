@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/MY-PORTFOLIO-React/static/css/main.56576927.css",
-    "main.js": "/MY-PORTFOLIO-React/static/js/main.7e6d3058.js",
+    "main.css": "/MY-PORTFOLIO-React/static/css/main.51d659cc.css",
+    "main.js": "/MY-PORTFOLIO-React/static/js/main.226ceb50.js",
     "static/media/ivest press.png": "/MY-PORTFOLIO-React/static/media/ivest press.5ff3453f39499f37c745.png",
-    "static/media/book-store.png": "/MY-PORTFOLIO-React/static/media/book-store.af6c3f4dd9272f17847d.png",
-    "static/media/my-profile.png": "/MY-PORTFOLIO-React/static/media/my-profile.52c06654c2f113710862.png",
+    "static/media/portfolio-react.png": "/MY-PORTFOLIO-React/static/media/portfolio-react.7e40dbcd292993436bb2.png",
     "static/media/main.png": "/MY-PORTFOLIO-React/static/media/main.a0812228757a253312c7.png",
-    "static/media/todo list react.png": "/MY-PORTFOLIO-React/static/media/todo list react.251a3e352c86653f5e66.png",
-    "static/media/todo-list.jpg": "/MY-PORTFOLIO-React/static/media/todo-list.d85b254698dc7298ed79.jpg",
+    "static/media/bloom.png": "/MY-PORTFOLIO-React/static/media/bloom.6a54dd7b0af6a26f9131.png",
     "index.html": "/MY-PORTFOLIO-React/index.html",
-    "main.56576927.css.map": "/MY-PORTFOLIO-React/static/css/main.56576927.css.map",
-    "main.7e6d3058.js.map": "/MY-PORTFOLIO-React/static/js/main.7e6d3058.js.map"
+    "main.51d659cc.css.map": "/MY-PORTFOLIO-React/static/css/main.51d659cc.css.map",
+    "main.226ceb50.js.map": "/MY-PORTFOLIO-React/static/js/main.226ceb50.js.map"
   },
   "entrypoints": [
-    "static/css/main.56576927.css",
-    "static/js/main.7e6d3058.js"
+    "static/css/main.51d659cc.css",
+    "static/js/main.226ceb50.js"
   ]
 }
