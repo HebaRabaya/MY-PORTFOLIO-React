@@ -74,7 +74,7 @@ export const projects = [
     cat: "React",
     img: require("../assets/portfolio-react.png"),
     imageFit: "contain",
-    link: "https://github.com/HebaRabaya/MY-PORTFOLIO-React",
+    link: "https://hebarabaya.github.io/MY-PORTFOLIO-React/",
     description:
       "This portfolio website — designed and built with React and Framer Motion.",
   },
