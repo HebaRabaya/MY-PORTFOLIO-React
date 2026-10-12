@@ -54,7 +54,7 @@ export const projects = [
     cat: "React & Node.js",
     img: require("../assets/ivest press.png"),
     imageFit: "contain",
-    link: "https://ivestpress.com/",
+    link: "",
     description:
       "AI-powered platform for journalists. Graduation project built with React, Node.js, Express and PostgreSQL.",
   },
