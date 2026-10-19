@@ -52,7 +52,7 @@ export const projects = [
     id: 1,
     title: "IvestPress",
     cat: "React & Node.js",
-    img: require("../assets/ivest press.png"),
+   // img: require("../assets/ivest press.png"),
     imageFit: "contain",
     link: "",
     description:
